@@ -33,9 +33,13 @@ document.getElementById("btn-case-plus").addEventListener("click", () => {
   const newCaseNumber = updateCaseNumber(true);
 
   updateCaseTotalPrice(newCaseNumber);
+
+  calculateSubTotal();
 });
 
 document.getElementById("btn-case-minus").addEventListener("click", () => {
   const newCaseNumber = updateCaseNumber(false);
   updateCaseTotalPrice(newCaseNumber);
+
+  calculateSubTotal();
 });
